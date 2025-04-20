@@ -53,8 +53,8 @@ class TripCrew:
 
 
 # Streamlit UI
-st.title("🌍 AI-Powered Travel Trip Planner")
-st.subheader("Plan your perfect trip effortlessly!")
+st.title("🌍 BonVoyage: Your Personalized Itinerary Planner")
+st.subheader("BonVoyage is your smart travel companion that effortlessly crafts personalized itineraries, curates destinations, and streamlines your entire trip—start to stay!")
 
 # Initialize session state for all inputs if not already set
 if "start_city" not in st.session_state:
