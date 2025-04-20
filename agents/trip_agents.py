@@ -31,7 +31,7 @@ class TripAgents:
             llm=LLM(model=self.model_id, api_key=self.hf_api_key),
             verbose=True,
             allow_delegation=False,
-            max_iter=2,
+            max_iter=1,
         )
 
     def travel_concierge_agent(self):
@@ -45,5 +45,5 @@ class TripAgents:
             llm=LLM(model=self.model_id, api_key=self.hf_api_key),
             verbose=True,
             allow_delegation=False,
-            max_iter=2,
+            max_iter=1,
         )
