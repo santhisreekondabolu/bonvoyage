@@ -61,20 +61,22 @@ Format flights as a markdown table:
 
 ---
 
-## 💰 Budget Breakdown (MANDATORY FORMAT)
+## 💰 Budget Breakdown (MANDATORY FORMAT — MUST USE REALISTIC NUMBERS)
+
 Include **one summary table** for the entire trip (not daily breakdown):
 
-| Item         | Estimated Cost |
-|--------------|----------------|
-| Flights      | ₹X             |
-| Accommodation | ₹X            |
-| Food         | ₹X             |
-| Transport    | ₹X             |
-| Activities   | ₹X             |
-| **Total**    | ₹Total         |
+| Item          | Estimated Cost |
+|---------------|----------------|
+| Flights       | ₹9,200         |
+| Accommodation | ₹18,000        |
+| Food          | ₹6,000         |
+| Transport     | ₹5,000         |
+| Activities    | ₹3,500         |
+| **Total**     | ₹41,700        |
 
-- Use realistic mid-to-luxury prices
-- Minimum food + transport budget should be ₹2,000/day
+- Do **NOT** use placeholders like ₹X
+- Use realistic mid-to-luxury prices based on India travel averages
+- Minimum budget for food + transport should be **₹2,000/day**
 
 ---
 
@@ -98,7 +100,7 @@ List 3–5 practical, destination-specific travel tips:
 ---
 
 🧠 Imagine this is for a premium concierge travel app. Keep it vivid, useful, and realistic. Be consistent with structure across all trips.
-             
+
             """),
             agent=agent,
             expected_output=f"Complete {trip_duration}-day expanded travel plan with daily schedule, weather conditions,Placed to visit, restaurants, hotel suggestions, flight options, mid to luxury transport recommendations, packing suggestions. budget breakdown for entire trip duration, travel tips"
