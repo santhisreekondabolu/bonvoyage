@@ -60,10 +60,9 @@ Format flights as a markdown table:
 **Use only MakeMyTrip flight links and only for IndiGo. No placeholder or generated URLs.**
 
 ---
+## 💰 Budget Breakdown (FINAL SECTION BEFORE TRAVEL TIPS — USE REAL NUMBERS ONLY)
 
-## 💰 Budget Breakdown (MANDATORY FORMAT — MUST USE REALISTIC NUMBERS)
-
-Include **one summary table** for the entire trip (not daily breakdown):
+Create a **summary table** (NOT daily breakdown). Do **NOT** return any placeholder like ₹X or leave blank.
 
 | Item          | Estimated Cost |
 |---------------|----------------|
@@ -74,9 +73,11 @@ Include **one summary table** for the entire trip (not daily breakdown):
 | Activities    | ₹3,500         |
 | **Total**     | ₹41,700        |
 
-- Do **NOT** use placeholders like ₹X
-- Use realistic mid-to-luxury prices based on India travel averages
-- Minimum budget for food + transport should be **₹2,000/day**
+**Rules:**
+- Use realistic **mid-to-luxury pricing**
+- **Flight cost must include BOTH onward and return IndiGo flights combined**
+- Minimum combined budget for food and transport: ₹2,000/day
+- Show numerical values for all rows. Do **not omit, skip, or leave any row blank**
 
 ---
 
