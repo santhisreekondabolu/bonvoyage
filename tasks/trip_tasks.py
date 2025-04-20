@@ -96,13 +96,14 @@ List 3–5 practical, destination-specific travel tips:
 
 ---
 
-## 🔧 Output & Formatting Rules
+## 🔧 Output & Formatting Rules  (Instruction Only — Do Not Output This Section)
 - Structure output in clean **Markdown**
 - Use **emojis** for headers and bullets
 - **Include royalty-free image URLs** per day (for places/tips) — don't generate images
 - Use **tables** for flights and budget breakdown only
-- Do not merge or rearrange sections
+- Do not merge or rearrange sections or skip any sections
 - Avoid repetition or generic content
+- Do **not include** this instructions section in the output
 
 ---
 
