@@ -121,8 +121,8 @@ if st.session_state.trip_plan:
     st.subheader("🏝️ Your BonVoyage Itinerary")
     st.markdown(st.session_state.trip_plan, unsafe_allow_html=True)
 
-        trip_filename = f"Trip_Plan_{st.session_state.start_city}_to_{st.session_state.destination_city}.md"
-        st.download_button(
+    trip_filename = f"Trip_Plan_{st.session_state.start_city}_to_{st.session_state.destination_city}.md"
+    st.download_button(
             label="📥 Download Trip Plan",
             data=str(st.session_state.trip_plan),
             file_name=trip_filename,
