@@ -34,7 +34,10 @@ You must **STRICTLY follow this structure and content rules below. Do not skip, 
 ---
 
 ## 📅 Daily Structure (MANDATORY PER DAY)
-For each day (e.g., **## Day 1**, **## Day 2**, etc.), include:
+Repeat the following structure for **each of the {trip_duration} days** of the trip, labeling them as:
+- `## Day 1 - {date}`
+- `## Day 2 - {date}`
+- etc.
 Begin with this **mandatory line**:  
 📍 **Location:** <City or Town you're staying in on this day>
 
