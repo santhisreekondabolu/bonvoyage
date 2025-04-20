@@ -33,10 +33,10 @@ class TripTasks:
             - 🗺️ Specific places to visit each day (with short why it's special) 
             - 🍴 Local restaurants or cafés (name ) 
             - 🛏️ **Hotel suggestions** (preferably Mid to luxury range, do not provide booking links )
-            - ✈️ **Flight options(only Indigo) with booking site links** (e.g., from MakeMyTrip) Day1 should include onward flight detail, last day itierary should include return flight detail
+            - ✈️ **Flight options(only Indigo) with booking site links** (e.g., from MakeMyTrip) Day1 should include onward flight detail with booking link, last day itierary should include return flight detail with booking link
             - 🚕 Local transport recommendations 
             - 🎒 Daily packing tips based on weather
-            - 💰 Full **budget breakdown** at the end for entire trip (stay, food, transport, tickets, etc.)  flight tickets budget (budget breakdown should include both onward and return price added), Give approximate cost of food.transport, stay for entire trip duration
+            - 💰 Full **budget breakdown** at the end for entire trip (stay, food, transport, tickets, etc.)  flight tickets budget (budget breakdown should include both onward and return price added), Give approximate cost of food.transport (include luxury cab cost consolidated for entire duration), stay for entire trip duration
             Format the result in clear Markdown with colorful images:
             - Headings (e.g. ## Day 1, Day2, Day3..., ## Budget Breakdown (not daily but consolidated for entire trip duration )
             - appropriate colorful images for locations and tips
