@@ -26,7 +26,7 @@ class TripTasks:
         trip_duration = (end_date - start_date).days + 1
         return Task(
             description=dedent(f"""
-            You are a world-class travel planner. Your task is to create a **complete {trip_duration}-day itinerary** for a traveler going from **{start_city}** to **{destination_city}**, from **{start_date.strftime('%B %d, %Y')}** to **{end_date.strftime('%B %d, %Y')}**.
+            You are a world-class travel planner. Your task is to create a **complete {trip_duration}-day itinerary** for a traveler going from **{start_city}** to **{destination_city}**, from **{start_date.strftime('%B %d, %Y')}** to **{end_date.strftime('%B %d, %Y')}** **Traveler Interests:** {', '.join(interests) if isinstance(interests, list) else interests}.
             This itinerary must include:
             - 📅 Clear daily structure (Day 1, Day 2, etc.) Day Wise Itinerary
             - 🌤️ Approximate daily weather forecast
@@ -36,7 +36,10 @@ class TripTasks:
             - ✈️ **Flight options(only Indigo) with booking site links** (e.g., from MakeMyTrip) Day1 should include onward flight detail with booking link, last day itierary should include return flight detail with booking link
             - 🚕 Local transport recommendations (with Mid to Luxury range)
             - 🎒 Daily packing tips based on weather
-            - 💰 Full **budget breakdown** at the end for entire trip (stay, food, transport, tickets, etc.)  flight tickets budget (budget breakdown should include only inbound and outbound flight on day1 and lastday each), Give approximate cost of food.transport (mid to luxery range with a lower limit of 2000 per day), stay for entire trip duration
+            - 💰 Full **budget breakdown** at the end for entire trip (stay, food, transport, tickets, etc.)  flight tickets budget (budget breakdown should include inbound on day1 and outbound flight on lastday ), Give approximate cost of food.transport (mid to luxery range with a lower limit of 2000 per day), stay for entire trip duration
+            Ensure this trip is **THE BEST EXPERIENCE POSSIBLE** by providing:
+            - Specific recommendations with reasons why each place is special
+            - Cultural insights and hidden gems
             - Must-know travel tips for smooth navigation {self.__tip_section()}
             Format the result in clear Markdown with colorful images:
             - Headings (e.g. ## Day 1, Day2, Day3.., ## Budget Breakdown (not daily but consolidated for entire trip duration )
