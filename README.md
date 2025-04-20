@@ -1,2 +1,16 @@
-# bonvoyage
-BonVoyage is your smart travel assistant that helps plan personalized itineraries, discover destinations, book stays, and manage your journey—all in one place. From trip ideas to detailed day plans, BonVoyage makes travel simple, organized, and memorable for every kind of traveler.
+## Travel trip planner
+
+- python version: 3.11.11
+
+### Steps to run:
+1. To install dependancies:  
+```pip install -r requirements.txt```
+
+2. Command to run the app:  
+```streamlit run app.py```
+
+---
+### Live website:  
+https://trip-planner-latest-edgbukgl6vylxvev7u3yfw.streamlit.app/
+---
+
