@@ -34,7 +34,7 @@ class TripTasks:
             - 🍴 Local restaurants or cafés (name ) 
             - 🛏️ **Hotel suggestions** (preferably Mid to luxury range, do not provide booking links )
             - ✈️ **Flight options(only Indigo) with booking site links** (e.g., from MakeMyTrip) Day1 should include onward flight detail, last day itierary should include return flight detail
-            - 🚕 Local transport recommendations (e.g., only Uber link)
+            - 🚕 Local transport recommendations cost of cab per day
             - 🎒 Daily packing tips based on weather
             - 💰 Full **budget breakdown** (stay, food, transport, tickets, etc.)  flight tickets budget (budget breakdown should include both onward and return price added), pick the cost from the above suggestions
             Format the result in clear Markdown with colorful images:
