@@ -35,11 +35,12 @@ You must **STRICTLY follow this structure and content rules below. Do not skip, 
 
 ## 📅 Daily Structure (MANDATORY PER DAY)
 For each day (e.g., **## Day 1**, **## Day 2**, etc.), include:
+- 📍 **Location** you're staying in that day (e.g., Kochi, Munnar)
 - 🌤️ Weather forecast (temperature range and rain chance)
-- 🗺️ **3 actual places to visit**, with 1-line reason for each — **do not provide links**
-- 🍴 Name **1–2 local restaurants or cafés** — **do not include links**
+- 🗺️ **3 actual places to visit**, each followed by a **1-sentence reason why it's special** — **do not provide links**
+- 🍴 Name **1–2 local restaurants or cafés** — **no links**
 - 🛏️ Name **1 mid-to-luxury hotel** — **no booking links**
-- ✈️ Flight info (ONLY on Day 1 and Last Day as described below)
+- ✈️ Flight info (**only on Day 1 and Last Day**) in correct table format
 - 🚕 Local transport suggestion (cab/rental/mid-luxury options)
 - 🎒 Daily packing tip based on weather
 
@@ -73,11 +74,10 @@ Create a **summary table** (NOT daily breakdown). Do **NOT** return any placehol
 | Activities    | ₹3,500         |
 | **Total**     | ₹41,700        |
 
-**Rules:**
 - Use realistic **mid-to-luxury pricing**
-- **Flight cost must include BOTH onward and return IndiGo flights combined**
-- Minimum combined budget for food and transport: ₹2,000/day
-- Show numerical values for all rows. Do **not omit, skip, or leave any row blank**
+- **Flight cost must be the sum of onward and return flights**
+- Food + transport combined should be **₹2,000/day minimum**
+- Show numerical values for all rows. Do **not skip or leave blank**
 
 ---
 
