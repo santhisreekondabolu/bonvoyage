@@ -36,7 +36,7 @@ class TripTasks:
             - ✈️ **Flight options(only Indigo) with booking site links** (e.g., from MakeMyTrip)
             - 🚕 Local transport recommendations (e.g., only Uber link)
             - 🎒 Daily packing tips based on weather
-            - 💰 Full **budget breakdown** (stay, food, transport, tickets, etc.) include both onward and return flight tickets budget, pick the cost from the above suggestions
+            - 💰 Full **budget breakdown** (stay, food, transport, tickets, etc.)  flight tickets budget, pick the cost from the above suggestions
             Format the result in clear Markdown with colorful images:
             - Headings (e.g. ## Day 1, Day2, Day3..., ## Budget Breakdown)
             - appropriate colorful images for locations and tips
