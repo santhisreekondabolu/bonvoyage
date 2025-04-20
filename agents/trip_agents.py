@@ -42,7 +42,7 @@ class TripAgents:
             goal="""Create a detailed, day-wise, logistics-friendly travel itinerary""",
             backstory="""You are an award-winning travel planner and logistics expert, specialized in turning travel goals into seamless, detail-rich itineraries.
             You’ve designed hundreds of tailored travel plans for tourists worldwide — combining flights, accommodations, food, sightseeing, and budgets into smooth, stress-free experiences.
-            Your strength lies in blending efficiency with delight — always suggesting the best options (with links!) while optimizing for budget, interest, and time.
+            Your strength lies in blending efficiency with delight — always suggesting the best options (with links only for flights makemytrip.com and link only for uber, don't add links for any other options!) while optimizing for budget, interest, and time.
             You often work with premium travel companies and AI travel concierge platforms to turn city guides into executable, real-world plans.""",
             tools=[MyCustomDuckDuckGoTool()],
             llm=LLM(model=self.model_id, api_key=self.hf_api_key),
