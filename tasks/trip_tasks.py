@@ -35,7 +35,10 @@ You must **STRICTLY follow this structure and content rules below. Do not skip, 
 
 ## 📅 Daily Structure (MANDATORY PER DAY)
 For each day (e.g., **## Day 1**, **## Day 2**, etc.), include:
-- 📍 **Location** you're staying in that day (e.g., Kochi, Munnar)
+Begin with this **mandatory line**:  
+📍 **Location:** <City or Town you're staying in on this day>
+
+Then include the following in this exact order:
 - 🌤️ Weather forecast (temperature range and rain chance)
 - 🗺️ **3 actual places to visit**, each followed by a **1-sentence reason why it's special** — **do not provide links**
 - 🍴 Name **1–2 local restaurants or cafés** — **no links**
