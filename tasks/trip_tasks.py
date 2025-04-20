@@ -26,62 +26,79 @@ class TripTasks:
         trip_duration = (end_date - start_date).days + 1
         return Task(
             description=dedent(f"""
-            You are a world-class travel planner. Create a **complete {trip_duration}-day itinerary** for a traveler going from **{start_city}** to **{destination_city}**, between **{start_date.strftime('%B %d, %Y')}** and **{end_date.strftime('%B %d, %Y')}**.
+You are a world-class travel planner. Create a **complete {trip_duration}-day itinerary** for a traveler going from **{start_city}** to **{destination_city}**, between **{start_date.strftime('%B %d, %Y')}** and **{end_date.strftime('%B %d, %Y')}**.  
 **Traveler Interests:** {', '.join(interests) if isinstance(interests, list) else interests}
 
-Your itinerary **must include the following elements**:
-
-### 📅 Daily Structure
-- Day-wise plan (e.g., **## Day 1**, **## Day 2**...)
-- 🌤️ Approximate weather for each day
-- 🗺️ **Actual** places to visit with a short reason why it’s special (**no links**)
-- 🍴 Names of local restaurants/cafés (**no links**)
-- 🛏️ Mid-to-luxury hotel suggestions (**no booking links**)
-
-### ✈️ Flight Options (IndiGo only)
-- Include **actual** flight name, time, price, and a booking link from MakeMyTrip
-- Add flights as a **table**, like:
-
-
-Flight	Time	Price	Link
-IndiGo 6E-123	7:45 AM	₹5,234	Book Now
-yaml
-Copy
-Edit
-
-- Day 1 must include **onward** flight  
-- Last day must include **return** flight
-
-### 🚕 Local Transport
-- Mention mid-to-luxury local transport options (cab, rental, etc.)
-
-### 🎒 Packing Tips
-- Based on forecasted weather, give **daily tips** on what to pack
-
-### 💰 Budget Breakdown
-- End with a **summary table** (not per day, but for entire trip)
-- Budget must include flight (inbound & return), stay, food, transport, activities
-- Minimum of ₹2,000/day for food + transport (mid to luxury range)
+You must **STRICTLY follow this structure and content rules below. Do not skip, merge or move sections. Do not provide links unless specified.**
 
 ---
 
-### 🛡️ Must-Know Travel Tips (This section **must appear at the end**)
-- Cultural etiquette
-- Hidden gems
-- Safety or insider advice
-- Keep tips practical and destination-specific
+## 📅 Daily Structure (MANDATORY PER DAY)
+For each day (e.g., **## Day 1**, **## Day 2**, etc.), include:
+- 🌤️ Weather forecast (temperature range and rain chance)
+- 🗺️ **3 actual places to visit**, with 1-line reason for each — **do not provide links**
+- 🍴 Name **1–2 local restaurants or cafés** — **do not include links**
+- 🛏️ Name **1 mid-to-luxury hotel** — **no booking links**
+- ✈️ Flight info (ONLY on Day 1 and Last Day as described below)
+- 🚕 Local transport suggestion (cab/rental/mid-luxury options)
+- 🎒 Daily packing tip based on weather
 
 ---
 
-### 🔧 Formatting Requirements
-- Output should be **clear Markdown**
-- Use emojis for sections
-- Include **images** that visually enhance the guide (use image URLs, don't generate them)
-- Tables for flight and budget info (avoid raw bullet points)
+## ✈️ Flight Options (IndiGo only — **MANDATORY format**)
+
+Only on:
+- **Day 1**: Provide **onward** flight
+- **Last Day**: Provide **return** flight
+
+Format flights as a markdown table:
+
+| Flight        | Time     | Price  | Link                                        |
+|---------------|----------|--------|---------------------------------------------|
+| IndiGo 6E-123 | 7:45 AM  | ₹5,234 | [Book Now](https://www.makemytrip.com/flights/) |
+
+**Use only MakeMyTrip flight links and only for IndiGo. No placeholder or generated URLs.**
 
 ---
 
-Make it feel like a **premium itinerary for a travel app**, blending utility with visual appeal.               
+## 💰 Budget Breakdown (MANDATORY FORMAT)
+Include **one summary table** for the entire trip (not daily breakdown):
+
+| Item         | Estimated Cost |
+|--------------|----------------|
+| Flights      | ₹X             |
+| Accommodation | ₹X            |
+| Food         | ₹X             |
+| Transport    | ₹X             |
+| Activities   | ₹X             |
+| **Total**    | ₹Total         |
+
+- Use realistic mid-to-luxury prices
+- Minimum food + transport budget should be ₹2,000/day
+
+---
+
+## 🛡️ Must-Know Travel Tips (**Last section**)
+List 3–5 practical, destination-specific travel tips:
+- Cultural do’s and don’ts
+- Hidden gems or local customs
+- Safety tips
+- What locals wish tourists knew
+
+---
+
+## 🔧 Output & Formatting Rules
+- Structure output in clean **Markdown**
+- Use **emojis** for headers and bullets
+- **Include royalty-free image URLs** per day (for places/tips) — don't generate images
+- Use **tables** for flights and budget breakdown only
+- Do not merge or rearrange sections
+- Avoid repetition or generic content
+
+---
+
+🧠 Imagine this is for a premium concierge travel app. Keep it vivid, useful, and realistic. Be consistent with structure across all trips.
+             
             """),
             agent=agent,
             expected_output=f"Complete {trip_duration}-day expanded travel plan with daily schedule, weather conditions,Placed to visit, restaurants, hotel suggestions, flight options, mid to luxury transport recommendations, packing suggestions. budget breakdown for entire trip duration, travel tips"
