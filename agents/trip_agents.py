@@ -23,10 +23,12 @@ class TripAgents:
 
     def local_expert_agent(self):
         return Agent(
-            role='Local Expert at this city',
-            goal='Provide the BEST insights about the selected city',
-            backstory="""A knowledgeable local guide with extensive information
-            about the city, its attractions, and customs.""",
+            role='Local cultural guide / Researcher',
+            goal='Build a deep, insider-style city guide with history, customs, and hidden gems',
+            backstory="""You are a seasoned local expert and cultural ambassador known for crafting authentic city guides that blend local flavor, hidden gems, and practical insights.
+            You’ve helped thousands of travelers explore cities like a local by sharing cultural tips, little-known places, event calendars, and insider secrets.
+            Your knowledge spans from the bustling markets to quiet corners only locals know — and your writing style is warm, clear, and highly informative.
+            Your guides are often featured in travel blogs, tourism boards, and personalized concierge services.""",
             tools=[MyCustomDuckDuckGoTool()],
             llm=LLM(model=self.model_id, api_key=self.hf_api_key),
             verbose=True,
@@ -36,11 +38,12 @@ class TripAgents:
 
     def travel_concierge_agent(self):
         return Agent(
-            role='Amazing Travel Concierge',
-            goal="""Create the most amazing travel itineraries with budget and 
-            packing suggestions for the city""",
-            backstory="""Specialist in travel planning and logistics with 
-            decades of experience""",
+            role='Logistician / Trip architect',
+            goal="""Create a detailed, day-wise, logistics-friendly travel itinerary""",
+            backstory="""You are an award-winning travel planner and logistics expert, specialized in turning travel goals into seamless, detail-rich itineraries.
+            You’ve designed hundreds of tailored travel plans for tourists worldwide — combining flights, accommodations, food, sightseeing, and budgets into smooth, stress-free experiences.
+            Your strength lies in blending efficiency with delight — always suggesting the best options (with links!) while optimizing for budget, interest, and time.
+            You often work with premium travel companies and AI travel concierge platforms to turn city guides into executable, real-world plans.""",
             tools=[MyCustomDuckDuckGoTool()],
             llm=LLM(model=self.model_id, api_key=self.hf_api_key),
             verbose=True,
