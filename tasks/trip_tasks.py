@@ -33,11 +33,11 @@ class TripTasks:
             - 🌤️ Approximate daily weather forecast
             - 🗺️ Specific places to visit each day (with short why it's special) 
             - 🍴 Local restaurants or cafés (name ) 
-            - 🛏️ **Hotel suggestions** (preferably budget/mid-range on MakeMyTrip )
-            - ✈️ **Flight options with booking site links** (e.g., from MakeMyTrip)
+            - 🛏️ **Hotel suggestions** (preferably Mid to luxury range on MakeMyTrip )
+            - ✈️ **Flight options(only Indigo) with booking site links** (e.g., from MakeMyTrip)
             - 🚕 Local transport recommendations (e.g., only Uber link)
             - 🎒 Daily packing tips based on weather
-            - 💰 Full **budget breakdown** (stay, food, transport, tickets, etc.)
+            - 💰 Full **budget breakdown** (stay, food, transport, tickets, etc.) include both onward and return flight tickets budget, pick the cost from the above suggestions
             Format the result in clear Markdown with colorful images:
             - Headings (e.g. ## Day 1, Day2, Day3..., ## Budget Breakdown)
             - Bullet points for locations and tips
