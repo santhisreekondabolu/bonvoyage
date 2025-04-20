@@ -34,17 +34,17 @@ class TripTasks:
             - 🍴 Local restaurants or cafés (name ) 
             - 🛏️ **Hotel suggestions** (preferably Mid to luxury range, do not provide booking links )
             - ✈️ **Flight options(only Indigo) with booking site links** (e.g., from MakeMyTrip) Day1 should include onward flight detail, last day itierary should include return flight detail
-            - 🚕 Local transport recommendations cost of cab per day
+            - 🚕 Local transport recommendations 
             - 🎒 Daily packing tips based on weather
-            - 💰 Full **budget breakdown** (stay, food, transport, tickets, etc.)  flight tickets budget (budget breakdown should include both onward and return price added), pick the cost from the above suggestions
+            - 💰 Full **budget breakdown** at the end for entire trip (stay, food, transport, tickets, etc.)  flight tickets budget (budget breakdown should include both onward and return price added), Give approximate cost of food.transport, stay for entire trip duration
             Format the result in clear Markdown with colorful images:
-            - Headings (e.g. ## Day 1, Day2, Day3..., ## Budget Breakdown )
+            - Headings (e.g. ## Day 1, Day2, Day3..., ## Budget Breakdown (not daily but consolidated for entire trip duration )
             - appropriate colorful images for locations and tips
             - Tables for budget and accommodations (if applicable)
             Make it feel exclusive and realistic, include beautiful heart touching images, — as if you're planning a trip for a premium travel app.               
             """),
             agent=agent,
-            expected_output=f"Complete {trip_duration}-day expanded travel plan with daily schedule, weather conditions,Placed to visit, restaurants, hotel suggestions, flight options, local transport recommendations, packing suggestions, and budget breakdown"
+            expected_output=f"Complete {trip_duration}-day expanded travel plan with daily schedule, weather conditions,Placed to visit, restaurants, hotel suggestions, flight options, local transport recommendations, packing suggestions. budget breakdown for entire trip duration"
         )
 
     def __tip_section(self):
