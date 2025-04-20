@@ -26,26 +26,62 @@ class TripTasks:
         trip_duration = (end_date - start_date).days + 1
         return Task(
             description=dedent(f"""
-            You are a world-class travel planner. Your task is to create a **complete {trip_duration}-day itinerary** for a traveler going from **{start_city}** to **{destination_city}**, from **{start_date.strftime('%B %d, %Y')}** to **{end_date.strftime('%B %d, %Y')}** **Traveler Interests:** {', '.join(interests) if isinstance(interests, list) else interests}.
-            This itinerary must include:
-            - 📅 Clear daily structure (Day 1, Day 2, etc.) Day Wise Itinerary
-            - 🌤️ Approximate daily weather forecast
-            - 🗺️ Specific places to visit each day (with short why it's special) Do not provide any links to places
-            - 🍴 Local restaurants or cafés (name ) Do not provide any links to places
-            - 🛏️ **Hotel suggestions** (preferably Mid to luxury range, do not provide booking links )
-            - ✈️ **Flight options(only Indigo) with booking site links** (e.g., from MakeMyTrip) Day1 should include onward flight detail with booking link, last day itierary should include return flight detail with booking link
-            - 🚕 Local transport recommendations (with Mid to Luxury range)
-            - 🎒 Daily packing tips based on weather
-            - 💰 Full **budget breakdown** at the end for entire trip (stay, food, transport, tickets, etc.)  flight tickets budget (budget breakdown should include inbound on day1 and outbound flight on lastday ), Give approximate cost of food.transport (mid to luxery range with a lower limit of 2000 per day), stay for entire trip duration
-            Ensure this trip is **THE BEST EXPERIENCE POSSIBLE** by providing:
-            - Specific recommendations with reasons why each place is special
-            - Cultural insights and hidden gems
-            - Must-know travel tips for smooth navigation {self.__tip_section()}
-            Format the result in clear Markdown with colorful images:
-            - Headings (e.g. ## Day 1, Day2, Day3.., ## Budget Breakdown (not daily but consolidated for entire trip duration )
-            - appropriate colorful and appealing images for locations and tips
-            - Tables for budget and accommodations (if applicable)
-            Make it feel exclusive and realistic, include beautiful appealing and appropriate images, — as if you're planning a trip for a premium travel app.               
+            You are a world-class travel planner. Create a **complete {trip_duration}-day itinerary** for a traveler going from **{start_city}** to **{destination_city}**, between **{start_date.strftime('%B %d, %Y')}** and **{end_date.strftime('%B %d, %Y')}**.
+**Traveler Interests:** {', '.join(interests) if isinstance(interests, list) else interests}
+
+Your itinerary **must include the following elements**:
+
+### 📅 Daily Structure
+- Day-wise plan (e.g., **## Day 1**, **## Day 2**...)
+- 🌤️ Approximate weather for each day
+- 🗺️ **Actual** places to visit with a short reason why it’s special (**no links**)
+- 🍴 Names of local restaurants/cafés (**no links**)
+- 🛏️ Mid-to-luxury hotel suggestions (**no booking links**)
+
+### ✈️ Flight Options (IndiGo only)
+- Include **actual** flight name, time, price, and a booking link from MakeMyTrip
+- Add flights as a **table**, like:
+
+
+Flight	Time	Price	Link
+IndiGo 6E-123	7:45 AM	₹5,234	Book Now
+yaml
+Copy
+Edit
+
+- Day 1 must include **onward** flight  
+- Last day must include **return** flight
+
+### 🚕 Local Transport
+- Mention mid-to-luxury local transport options (cab, rental, etc.)
+
+### 🎒 Packing Tips
+- Based on forecasted weather, give **daily tips** on what to pack
+
+### 💰 Budget Breakdown
+- End with a **summary table** (not per day, but for entire trip)
+- Budget must include flight (inbound & return), stay, food, transport, activities
+- Minimum of ₹2,000/day for food + transport (mid to luxury range)
+
+---
+
+### 🛡️ Must-Know Travel Tips (This section **must appear at the end**)
+- Cultural etiquette
+- Hidden gems
+- Safety or insider advice
+- Keep tips practical and destination-specific
+
+---
+
+### 🔧 Formatting Requirements
+- Output should be **clear Markdown**
+- Use emojis for sections
+- Include **images** that visually enhance the guide (use image URLs, don't generate them)
+- Tables for flight and budget info (avoid raw bullet points)
+
+---
+
+Make it feel like a **premium itinerary for a travel app**, blending utility with visual appeal.               
             """),
             agent=agent,
             expected_output=f"Complete {trip_duration}-day expanded travel plan with daily schedule, weather conditions,Placed to visit, restaurants, hotel suggestions, flight options, mid to luxury transport recommendations, packing suggestions. budget breakdown for entire trip duration, travel tips"
