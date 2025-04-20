@@ -29,28 +29,23 @@ class TripTasks:
             description=dedent(f"""
             You are a world-class travel planner. Your task is to create a **complete {trip_duration}-day itinerary** for a traveler going from **{start_city}** to **{destination_city}**, from **{start_date.strftime('%B %d, %Y')}** to **{end_date.strftime('%B %d, %Y')}**.
             This itinerary must include:
-            - 📅 Clear daily structure (Day 1, Day 2, etc.)
+            - 📅 Clear daily structure (Day 1, Day 2, etc.) Day Wise Itinerary
             - 🌤️ Approximate daily weather forecast
-            - 🗺️ Specific places to visit each day (with short why it's special) provide a link only when it is working and attraction is opened correctly
-            - 🍴 Local restaurants or cafés (name + location if possible) provide a link only when it is working and opening as expected
-            - 🛏️ **Hotel suggestions with booking links provided link is working** (preferably budget/mid-range on Booking.com or similar)
-            - ✈️ **Flight options with booking site links** (e.g., from Google Flights, Skyscanner, MakeMyTrip)
-            - 🚕 Local transport recommendations (e.g., Uber, auto, metro; include app or site links, only when link is working)
+            - 🗺️ Specific places to visit each day (with short why it's special) 
+            - 🍴 Local restaurants or cafés (name ) 
+            - 🛏️ **Hotel suggestions** (preferably budget/mid-range on MakeMyTrip )
+            - ✈️ **Flight options with booking site links** (e.g., from MakeMyTrip)
+            - 🚕 Local transport recommendations (e.g., only Uber link)
             - 🎒 Daily packing tips based on weather
             - 💰 Full **budget breakdown** (stay, food, transport, tickets, etc.)
-            💡 **Include booking links wherever possible** for:
-            - Hotels
-            - Flights
-            - Attractions with tickets
-            - Local transport apps or portals
             Format the result in clear Markdown with colorful images:
-            - Headings (e.g. ## Day 1, ## Budget Breakdown)
+            - Headings (e.g. ## Day 1, Day2, Day3..., ## Budget Breakdown)
             - Bullet points for locations and tips
             - Tables for budget and accommodations (if applicable)
-            Make it feel exclusive and realistic — as if you're planning a trip for a premium travel app.               
+            Make it feel exclusive and realistic, include beautiful heart touching images, — as if you're planning a trip for a premium travel app.               
             """),
             agent=agent,
-            expected_output=f"Complete {trip_duration}-day expanded travel plan with daily schedule, weather conditions, packing suggestions, and budget breakdown"
+            expected_output=f"Complete {trip_duration}-day expanded travel plan with daily schedule, weather conditions,Placed to visit, restaurants, hotel suggestions, flight options, local transport recommendations, packing suggestions, and budget breakdown"
         )
 
     def __tip_section(self):
