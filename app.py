@@ -69,14 +69,14 @@ if "interests" not in st.session_state:
     st.session_state.interests = ""
 
 # User inputs
-start_city = st.text_input("From where will you be traveling?")
-destination_city = st.text_input("What is the destination city?")
+start_city = st.text_input("Where are you starting your journey from?")
+destination_city = st.text_input("Where do you want to travel to?")
 col1, col2 = st.columns(2)
 with col1:
-    start_date = st.date_input("Start Date", min_value=date.today())
+    start_date = st.date_input("Trip Start Date", min_value=date.today()+ timedelta(days=1))
 with col2:
-    end_date = st.date_input("End Date", min_value=start_date)
-interests = st.text_area("What are your high-level interests and hobbies?")
+    end_date = st.date_input("Trip End Date", min_value=start_date)
+interests = st.text_area("Tell us about your interests or travel preferences?")
 
 # Initialize session state for button
 if "processing" not in st.session_state:
@@ -90,7 +90,7 @@ generate_disabled = st.session_state.processing
 # Generate trip plan
 if st.button("Generate Trip Plan", disabled=generate_disabled):
     if not start_city or not destination_city or not start_date or not end_date or not interests:
-        st.error("⚠️ Please fill in all fields before generating the trip plan.")
+        st.error("⚠️ Please complete all fields before generating your trip plan.")
     else:
         # Save current inputs in session state
         st.session_state.start_city = start_city
@@ -118,13 +118,13 @@ if st.session_state.processing:
 
 # Display the trip plan if available
 if st.session_state.trip_plan:
-    st.subheader("🏝️ Your Personalized Trip Plan:")
+    st.subheader("🏝️ Your BonVoyage Itinerary")
     st.markdown(st.session_state.trip_plan, unsafe_allow_html=True)
 
-    trip_filename = f"Trip_Plan_{st.session_state.start_city}_to_{st.session_state.destination_city}.md"
-    st.download_button(
-        label="📥 Download Trip Plan",
-        data=str(st.session_state.trip_plan),
-        file_name=trip_filename,
-        mime="text/markdown"
-    )
+        trip_filename = f"Trip_Plan_{st.session_state.start_city}_to_{st.session_state.destination_city}.md"
+        st.download_button(
+            label="📥 Download Trip Plan",
+            data=str(st.session_state.trip_plan),
+            file_name=trip_filename,
+            mime="text/markdown"
+        )
