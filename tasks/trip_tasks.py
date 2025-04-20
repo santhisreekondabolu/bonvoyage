@@ -31,11 +31,11 @@ class TripTasks:
             This itinerary must include:
             - 📅 Clear daily structure (Day 1, Day 2, etc.)
             - 🌤️ Approximate daily weather forecast
-            - 🗺️ Specific places to visit each day (with short why it's special)
-            - 🍴 Local restaurants or cafés (name + location if possible)
-            - 🛏️ **Hotel suggestions with booking links** (preferably budget/mid-range on Booking.com or similar)
+            - 🗺️ Specific places to visit each day (with short why it's special) provide a link only when it is working and attraction is opened correctly
+            - 🍴 Local restaurants or cafés (name + location if possible) provide a link only when it is working and opening as expected
+            - 🛏️ **Hotel suggestions with booking links provided link is working** (preferably budget/mid-range on Booking.com or similar)
             - ✈️ **Flight options with booking site links** (e.g., from Google Flights, Skyscanner, MakeMyTrip)
-            - 🚕 Local transport recommendations (e.g., Uber, auto, metro; include app or site links)
+            - 🚕 Local transport recommendations (e.g., Uber, auto, metro; include app or site links, only when link is working)
             - 🎒 Daily packing tips based on weather
             - 💰 Full **budget breakdown** (stay, food, transport, tickets, etc.)
             💡 **Include booking links wherever possible** for:
