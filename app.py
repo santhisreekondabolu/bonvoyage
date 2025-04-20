@@ -7,7 +7,7 @@ sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import streamlit as st
 from agents.trip_agents import TripAgents
 from tasks.trip_tasks import TripTasks
-from datetime import date
+from datetime import date,timedelta
 from crewai import Crew, Process
 from dotenv import load_dotenv
 import torch
