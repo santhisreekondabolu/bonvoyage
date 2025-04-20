@@ -37,6 +37,7 @@ class TripTasks:
             - 🚕 Local transport recommendations (with Mid to Luxury range)
             - 🎒 Daily packing tips based on weather
             - 💰 Full **budget breakdown** at the end for entire trip (stay, food, transport, tickets, etc.)  flight tickets budget (budget breakdown should include only inbound and outbound flight on day1 and lastday each), Give approximate cost of food.transport (mid to luxery range with a lower limit of 2000 per day), stay for entire trip duration
+            - Must-know travel tips for smooth navigation {self.__tip_section()}
             Format the result in clear Markdown with colorful images:
             - Headings (e.g. ## Day 1, Day2, Day3..., ## Budget Breakdown (not daily but consolidated for entire trip duration )
             - appropriate colorful and appealing images for locations and tips
