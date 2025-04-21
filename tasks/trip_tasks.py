@@ -67,7 +67,7 @@ Format flights as a markdown table:
 **Use only MakeMyTrip flight links and only for IndiGo. No placeholder or generated URLs.**
 
 ---
-## 💰 Budget Breakdown (FINAL SECTION BEFORE TRAVEL TIPS — USE REAL NUMBERS ONLY)
+## 💰 Budget Breakdown 
 
 Create a **summary table** (NOT daily breakdown). Do **NOT** return any placeholder like ₹X or leave blank.
 
@@ -96,7 +96,7 @@ List 3–5 practical, destination-specific travel tips:
 
 ---
 
-## 🔧 Output & Formatting Rules  (Instruction Only — Do Not Output This Section)
+## 🔧 Output & Formatting Rules 
 - Structure output in clean **Markdown**
 - Use **emojis** for headers and bullets
 - **Include royalty-free image URLs** per day (for places/tips) — don't generate images
