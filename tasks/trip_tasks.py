@@ -87,8 +87,9 @@ Create a **summary table** (NOT daily breakdown). Do **NOT** return any placehol
 
 ---
 
-## 🛡️ Must-Know Travel Tips (**Last section**)
+## 🛡️ Must-Know Travel Tips 
 List 3–5 practical, destination-specific travel tips:
+- List this as **Last Section**
 - Cultural do’s and don’ts
 - Hidden gems or local customs
 - Safety tips
@@ -96,14 +97,14 @@ List 3–5 practical, destination-specific travel tips:
 
 ---
 
-## 🔧 Output & Formatting Rules 
+Follow these rules while displaying the data
 - Structure output in clean **Markdown**
 - Use **emojis** for headers and bullets
 - **Include royalty-free image URLs** per day (for places/tips) — don't generate images
 - Use **tables** for flights and budget breakdown only
 - Do not merge or rearrange sections or skip any sections
 - Avoid repetition or generic content
-- Do **not include** this instructions section in the output
+- Do **not include** Output & Formatting Rules instructions section in the output
 
 ---
 
