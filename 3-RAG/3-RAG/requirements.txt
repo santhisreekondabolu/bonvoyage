@@ -1,0 +1,11 @@
+streamlit
+langchain
+langchain-community
+langchain-core
+langchain-huggingface
+faiss-cpu
+torch
+pypdf
+python-dotenv
+transformers==4.30.2
+sentence-transformers==2.2.2
