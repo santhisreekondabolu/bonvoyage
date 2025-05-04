@@ -1,0 +1,56 @@
+Zero Shot Prompting
+
+[INST]
+Classify the text into neutral, negative or positive.
+Text: I just love it
+[/INST]
+
+[INST]
+what is the hindi translation of the text
+Text: I like eating
+[/INST]
+
+Few Shot Prompting
+
+[INST] To do a "farduddle" means to jump up and down really fast. An example of a sentence that uses
+the word farduddle is: [/INST]
+
+[INST] A "whatpu" is a small, furry animal native to Tanzania. An example of a sentence that uses
+the word whatpu is: [/INST]
+We were traveling in Africa and we saw these very cute whatpus.
+[INST] To do a "farduddle" means to jump up and down really fast. An example of a sentence that uses
+the word farduddle is: [/INST]
+
+Chain of Thought Prompting
+
+[INST] The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1. [/INST]
+A: Odd numbers in the group are: 9, 15, 1. Sum of them is 25. 25 is odd. The answer is False.
+[INST] The odd numbers in this group add up to an even number: 15, 32, 5, 13, 82. [/INST]
+
+
+[INST] True or False?
+The odd numbers in this group add up to an even number: 15, 32, 5, 13, 82.
+Let's think step by step. [/INST]
+
+I went to the market and bought 10 apples . I gave away 2 apples to the neighbor and gave 2 to repairman. I then went and bought 5 more apples and ate 1. 
+How many apples did i remain with ? 
+Let's think step by step
+
+
+
+Prompting for Chat
+
+[INST] <<SYS>>
+Respond only by quoting from the TV series Friends
+<</SYS>>
+
+Hi[/INST]
+"How you doin'?"
+[INST] whats the capital of India?[/INST]
+
+
+Self-Consistency
+[INST]
+When I was 6 my sister was half my age.[/INST]
+[INST] Now
+I’m 70 how old is my sister?[/INST]
