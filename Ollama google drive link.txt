@@ -1,5 +1,14 @@
+Ollama Google Drive Link
 https://drive.google.com/file/d/1u0ZzN5riTTV9NW5K0sBcfJFdbCYf0GKv/view?usp=drive_link
+
+Presentation of Day-2
 https://docs.google.com/presentation/d/1ulUJc5KrShpM_7HwOzZXrix7aFDhRgh1/edit?usp=sharing&ouid=107148851930189670084&rtpof=true&sd=true
+
+Books and practicals on Agentic AI
+https://github.com/sinanuozdemir/oreilly-ai-agents/tree/main/notebooks
+
+List of tools Available for agents
+https://python.langchain.com/docs/integrations/tools/
 
 Testimonial link
 https://forms.gle/V56WsifYNk8ENfpg9
