@@ -1,0 +1,38 @@
+1. Run below cmd in your cmd (https://ollama.com/library/mistral):
+   ollama run mistral
+
+2. Replacce the old class with below class in the trip_agents.py file:
+	
+	class TripAgents:
+		def local_expert_agent(self):
+			return Agent(
+				role='Local Expert at this city',
+				goal='Provide the BEST insights about the selected city',
+				backstory="""A knowledgeable local guide with extensive information
+				about the city, its attractions, and customs.""",
+				tools=[MyCustomDuckDuckGoTool()],
+				llm=LLM(
+					model="ollama/mistral",
+					base_url="http://localhost:11434"
+				),
+				verbose=True,
+				allow_delegation=False,
+				max_iter=4,
+			)
+
+		def travel_concierge_agent(self):
+			return Agent(
+				role='Amazing Travel Concierge',
+				goal="""Create the most amazing travel itineraries with budget and 
+				packing suggestions for the city""",
+				backstory="""Specialist in travel planning and logistics with 
+				decades of experience""",
+				tools=[MyCustomDuckDuckGoTool()],
+				llm=LLM(
+					model="ollama/mistral",
+					base_url="http://localhost:11434"
+				),
+				verbose=True,
+				allow_delegation=False,
+				max_iter=4,
+			)
