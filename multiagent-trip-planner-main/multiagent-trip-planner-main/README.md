@@ -15,6 +15,8 @@
   mytrip\Scripts\activate    # On Windows
   source mytrip/bin/activate # On macOS/Linux
 
+1.1  ollama run mistral
+
 2. To install dependencies:
    pip install -r requirements.txt
 
